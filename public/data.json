@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "playerName": "Shakib Al Hasan",
+    "playerImg": "./playersimg/sakib.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Left-arm orthodox",
+    "battingStyle": "Left-handed",
+    "price": 7000000
+  },
+  {
+    "id": 2,
+    "playerName": "Tamim Iqbal",
+    "playerImg": "./playersimg/tamim.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Left-handed",
+    "price": 6500000
+  },
+  {
+    "id": 3,
+    "playerName": "Mushfiqur Rahim",
+    "playerImg": "./playersimg/mushfiq.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "Wicketkeeper-Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-handed",
+    "price": 6000000
+  },
+  {
+    "id": 4,
+    "playerName": "Mahmudullah Riyad",
+    "playerImg": "./playersimg/Riyad.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm off-break",
+    "battingStyle": "Right-handed",
+    "price": 5500000
+  },
+  {
+    "id": 5,
+    "playerName": "Mustafizur Rahman",
+    "playerImg": "./playersimg/mustafiz.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm fast-medium",
+    "battingStyle": "Left-handed",
+    "price": 5000000
+  },
+  {
+    "id": 6,
+    "playerName": "Taskin Ahmed",
+    "playerImg": "./playersimg/taskin.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "battingStyle": "Right-handed",
+    "price": 4500000
+  },
+  {
+    "id": 7,
+    "playerName": "Mehidy Hasan Miraz",
+    "playerImg": "./playersimg/miraz.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm off-break",
+    "battingStyle": "Right-handed",
+    "price": 4800000
+  },
+  {
+    "id": 8,
+    "playerName": "Litton Das",
+    "playerImg": "./playersimg/litondas.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "Wicketkeeper-Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-handed",
+    "price": 5200000
+  },
+  {
+    "id": 9,
+    "playerName": "Najmul Hossain Shanto",
+    "playerImg": "./playersimg/shanto.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm off-break",
+    "battingStyle": "Left-handed",
+    "price": 4000000
+  },
+  {
+    "id": 10,
+    "playerName": "Tanzid Hasan",
+    "playerImg": "./playersimg/tanzid.jpeg",
+    "origin": "Bangladesh",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Left-handed",
+    "price": 3000000
+  }
+]
