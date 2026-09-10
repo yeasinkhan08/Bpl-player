@@ -1,8 +1,9 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Banner from "./components/Banner";
 import Navber from "./components/Navber";
 import Players from "./components/players/Players";
 import type { PlayerType } from "./Types/playerType";
+import { ToastContainer } from "react-toastify";
 // import AvailablePlayers from "./components/players/AvailablePlayers";
 
 const playersPromise = async (): Promise<PlayerType[]> => {
@@ -12,15 +13,19 @@ const playersPromise = async (): Promise<PlayerType[]> => {
 };
 
 function App() {
+  const [coin, setCoin] = useState(20000);
   return (
     <>
-      <Suspense fallback={<h2>Loading...</h2>}>
-        <Navber />
-      </Suspense>
+      <Navber coin={coin} />
 
       <Banner />
-      <Suspense>
-        <Players playersPromise={playersPromise()} />
+      <ToastContainer />
+      <Suspense fallback={<h2>Loading...</h2>}>
+        <Players
+          playersPromise={playersPromise()}
+          coin={coin}
+          setCoin={setCoin}
+        />
       </Suspense>
     </>
   );

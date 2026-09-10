@@ -1,12 +1,33 @@
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type { PlayerType } from "../../Types/playerType";
 import { FaFlag } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 export interface AvailablePlayersProps {
   player: PlayerType;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
 }
 
-export default function AvailablePlayers({ player }: AvailablePlayersProps) {
-  console.log(player);
+export default function AvailablePlayers({
+  player,
+  coin,
+  setCoin,
+}: AvailablePlayersProps) {
+  const [isSelected, setIsSelected] = useState(false);
+  console.log(isSelected);
+
+  const handleSelectPlayer = () => {
+    setIsSelected(true);
+
+    const newCoinPrice = coin - player.price;
+    if (newCoinPrice >= 0) {
+      setCoin(newCoinPrice);
+      toast(`${player.playerName}purchase successfully`);
+    } else {
+      toast.error("insufficeant Coin");
+    }
+  };
 
   return (
     <>
@@ -49,8 +70,16 @@ export default function AvailablePlayers({ player }: AvailablePlayersProps) {
             </div>
           </div>
 
-          <button className="mt-5 w-full rounded-lg bg-lime-400 py-2.5 font-semibold text-gray-900 transition hover:bg-lime-500">
-            Select Player
+          <button
+            onClick={() => handleSelectPlayer()}
+            disabled={isSelected}
+            className={`mt-5 w-full rounded-lg py-2.5 font-semibold transition ${
+              isSelected
+                ? "cursor-not-allowed bg-gray-300 text-gray-500"
+                : "bg-lime-400 text-gray-900 hover:bg-lime-500"
+            }`}
+          >
+            {isSelected ? "Selected" : "Select Player"}
           </button>
         </div>
       </div>
